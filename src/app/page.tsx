@@ -1,3 +1,4 @@
+import Discover from "@/components/Discover/Discover";
 import Hero from "@/components/Hero";
 
 export default function Home() {
@@ -5,6 +6,9 @@ export default function Home() {
     <div>
       <div className="w-full h-[17px]"></div>
       <Hero />
+      <div className="w-full h-[128px]"></div>
+      <Discover />
+      <div className="w-full h-[120px]"></div>
     </div>
   );
 }

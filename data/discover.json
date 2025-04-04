@@ -1,0 +1,32 @@
+[
+  {
+    "id": "123",
+    "title": "Household Services",
+    "img": "/img/dis-slide-1.jpg"
+  },
+  {
+    "id": "223",
+    "title": "Home Maintenance Services",
+    "img": "/img/dis-slide-2.jpg"
+  },
+  {
+    "id": "423",
+    "title": "Beauty and Wellness",
+    "img": "/img/dis-slide-3.jpg"
+  },
+  {
+    "id": "523",
+    "title": "Education and Tutoring",
+    "img": "/img/dis-slide-4.jpg"
+  },
+  {
+    "id": "623",
+    "title": "Event and Entertainment",
+    "img": "/img/dis-slide-5.jpg"
+  },
+  {
+    "id": "723",
+    "title": "Marine Services ",
+    "img": "/img/dis-slide-6.jpg"
+  }
+]
