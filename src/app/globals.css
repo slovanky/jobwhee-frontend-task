@@ -1,23 +1,25 @@
 @import 'tailwindcss';
 
 @theme {
-  /*  */
+  /* Breakpoints */
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 860px;
+  --breakpoint-lg: 1440px;
+  --breakpoint-xl: 1920px;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #F0F1F4;
+  --foreground: #474747;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background);
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+}
+
+.wrapper {
+  @apply w-full max-w-[calc(335px+40px)] sm:max-w-[calc(780px+40px)] md:max-w-[calc(1200px+40px)] lg:max-w-[calc(1440px+40px)];
+  @apply mx-auto px-5;
 }
