@@ -24,6 +24,9 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased`}>
         <Header />
         <main>{children}</main>
+        <footer>
+          <div className="h-3.5 bg-[#C0D724]"></div>
+        </footer>
       </body>
     </html>
   );

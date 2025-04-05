@@ -54,7 +54,7 @@ export default function DiscoverSlides(props: DiscoverSlidesProps) {
           ))}
       </Swiper>
 
-      <div className="flex items-center justify-center gap-x-[24px]">
+      <div className="hidden sm:flex items-center justify-center gap-x-[24px]">
         <button
           title="Prev Testimonial"
           onClick={onPrevSlide}

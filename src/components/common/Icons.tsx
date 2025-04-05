@@ -95,3 +95,18 @@ export function GreekFlagIcon({ className }: { className: string }) {
     </svg>
   );
 }
+
+export function SearchIcon({ className }: { className: string }) {
+  return (
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path
+        d="M18.5633 18.5633L15.202 15.202M16.8826 10.1601C16.8826 11.943 16.1744 13.6529 14.9136 14.9136C13.6529 16.1744 11.943 16.8826 10.1601 16.8826C8.37713 16.8826 6.66722 16.1744 5.40649 14.9136C4.14577 13.6529 3.4375 11.943 3.4375 10.1601C3.4375 8.37713 4.14577 6.66722 5.40649 5.40649C6.66722 4.14577 8.37713 3.4375 10.1601 3.4375C11.943 3.4375 13.6529 4.14577 14.9136 5.40649C16.1744 6.66722 16.8826 8.37713 16.8826 10.1601Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
