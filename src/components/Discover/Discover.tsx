@@ -9,7 +9,7 @@ export default async function Discover() {
   const slideList: DiscoverSlide[] = JSON.parse(file);
 
   return (
-    <section>
+    <section className="overflow-x-hidden">
       <div className="wrapper">
         <div className="space-y-[54px]">
           <div className="flex items-center justify-center">

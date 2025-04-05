@@ -36,8 +36,8 @@ export default function DiscoverSlides(props: DiscoverSlidesProps) {
   return (
     <div className="space-y-8">
       <Swiper
-        id="testi-swiper"
-        className="my-swiper"
+        id="discover-swiper"
+        className="!overflow-visible md:!overflow-hidden"
         ref={sliderRef}
         modules={[A11y, Autoplay]}
         spaceBetween={20}
