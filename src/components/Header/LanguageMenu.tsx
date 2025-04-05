@@ -6,7 +6,7 @@ import { MotionDiv } from "../common/MotionDiv";
 import { AnimatePresence } from "motion/react";
 
 export default function LanguageMenu() {
-  const [userMenuIsOpen, setUserMenuIsOpen] = useState<boolean>(false);
+  const [langMenuIsOpen, setLangMenuIsOpen] = useState<boolean>(false);
 
   const menuElRef = useRef<HTMLDivElement>(null);
 
@@ -15,7 +15,7 @@ export default function LanguageMenu() {
       const cont: boolean = !menuElRef.current?.contains(event.target);
 
       if (cont) {
-        setUserMenuIsOpen(false);
+        setLangMenuIsOpen(false);
       }
     };
 
@@ -29,7 +29,7 @@ export default function LanguageMenu() {
   return (
     <div ref={menuElRef} className="relative">
       <button
-        onClick={() => setUserMenuIsOpen(!userMenuIsOpen)}
+        onClick={() => setLangMenuIsOpen(!langMenuIsOpen)}
         className="py-[7px] lg:py-[11px] px-[18px] flex items-center justify-center gap-x-1 bg-transparent text-sm text-white font-medium border border-[#949494]/50 rounded-full cursor-pointer"
       >
         <EnFlagIcon className="w-6 h-6 aspect-square -ms-2.5 bg-white/10 rounded-full" />
@@ -38,7 +38,7 @@ export default function LanguageMenu() {
       </button>
 
       <AnimatePresence>
-        {userMenuIsOpen && (
+        {langMenuIsOpen && (
           <MotionDiv
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
