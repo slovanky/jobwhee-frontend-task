@@ -1,6 +1,6 @@
 import SearchInput from "./SearchInput";
 import HeroCarousel from "./HeroCarousel";
-import { HeroShapeLeft, HeroShapeRight } from "./Graphics";
+import { HeroBottomCurve, HeroShapeLeft, HeroShapeRight } from "./Graphics";
 import { PlayIcon } from "../common/Icons";
 
 export default function Hero() {
@@ -9,7 +9,10 @@ export default function Hero() {
       <div className="wrapper">
         <div className="relative">
           <div className="relative pb-2 sm:pb-[12px] md:pb-0">
-            <HeroCarousel />
+            <div className="relative rounded-[18px] sm:rounded-[42px] lg:rounded-[50px] overflow-hidden">
+              <HeroCarousel />
+              <HeroBottomCurve className="z-[19] absolute -bottom-px left-1/2 translate -translate-x-1/2 w-[70%] h-auto text-[#F0F1F4]" />
+            </div>
 
             <div className="z-[99] absolute bottom-0 md:bottom-2.5 lg:bottom-[32px] left-1/2 translate -translate-x-1/2 max-w-full min-w-[207px] py-[11px] sm:py-[13px] lg:py-[17px] sm:px-6 md:px-[45px] lg:px-[40px] flex items-center justify-center bg-white rounded-full shadow-xl">
               <span className="text-[12px] sm:text-sm md:text-lg lg:text-xl font-bold sm:font-extrabold uppercase whitespace-nowrap">Education and Tutoring</span>
