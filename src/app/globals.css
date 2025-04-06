@@ -27,11 +27,11 @@ body {
 
 #hero-swiper {
   .swiper-pagination {
-    @apply bottom-[42px] sm:bottom-[46px] md:bottom-[77px] lg:bottom-[110px] flex items-center justify-center
+    @apply bottom-[32px] sm:bottom-[36px] md:bottom-[67px] lg:bottom-[100px];
   }
 
   .swiper-pagination-bullet {
-    @apply w-2 md:w-2.5 h-2 md:h-2.5 aspect-square my-0 py-0 shrink-0 opacity-[42%] bg-[#CBEC5E]
+    @apply w-2 md:w-2.5 h-2 md:h-2.5 aspect-square m-[5px] py-0 shrink-0 opacity-[42%] bg-[#CBEC5E]
   }
 
   .swiper-pagination-bullet-active {
