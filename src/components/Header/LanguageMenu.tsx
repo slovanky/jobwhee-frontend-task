@@ -49,7 +49,7 @@ export default function LanguageMenu() {
             <div className="w-full mt-[9px] bg-black border border-[#949494]/50 rounded-[14px]">
               <ul className="px-2 divide-y divide-[#4A4A4A]">
                 <li>
-                  <button className="py-2 flex items-center gap-x-[9px] text-sm text-white font-medium cursor-pointer">
+                  <button className="py-1.5 flex items-center gap-x-[9px] text-sm text-white font-medium cursor-pointer">
                     <EnFlagIcon className="w-6 h-6 aspect-square bg-white/10 rounded-full" />
                     <span className="text-xs md:text-base">English</span>
                   </button>
