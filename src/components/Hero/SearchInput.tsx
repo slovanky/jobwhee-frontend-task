@@ -42,6 +42,7 @@ export default function SearchInput() {
         <button
           onClick={() => setSearchMenuIsOpen(!searchMenuIsOpen)}
           className="h-[41px] px-3 flex items-center justify-center gap-x-1.5 bg-[#F0F1F4] border border-[#CDCDCD] rounded-full cursor-pointer"
+          aria-label="Search Menu"
         >
           <span>Talent</span>
           <ChevronDownIcon className="w-2 h-2 aspect-square" />
@@ -59,7 +60,10 @@ export default function SearchInput() {
               <div className="w-full mt-[9px] bg-white rounded-[12px] shadow-xl">
                 <ul className="w-full py-[3px]">
                   <li>
-                    <button className="w-full px-3 py-1.5 flex items-start justify-start gap-x-1.5 bg-transparent hover:bg-black/5 text-sm font-medium cursor-pointer">
+                    <button
+                      className="w-full px-3 py-1.5 flex items-start justify-start gap-x-1.5 bg-transparent hover:bg-black/5 text-sm font-medium cursor-pointer"
+                      aria-label="Search Mode"
+                    >
                       <TalentIcon className="w-[22px] h-[22px] aspect-square shrink-0" />
                       <div className="text-start">
                         <h5 className="text-sm text-[#181818] font-medium">Talent</h5>
@@ -68,7 +72,10 @@ export default function SearchInput() {
                     </button>
                   </li>
                   <li>
-                    <button className="w-full px-3 py-1.5 flex items-start justify-start gap-x-1.5 bg-transparent hover:bg-black/5 text-sm font-medium cursor-pointer">
+                    <button
+                      className="w-full px-3 py-1.5 flex items-start justify-start gap-x-1.5 bg-transparent hover:bg-black/5 text-sm font-medium cursor-pointer"
+                      aria-label="Search Mode"
+                    >
                       <ClientIcon className="w-[22px] h-[22px] aspect-square shrink-0" />
                       <div className="text-start">
                         <h5 className="text-sm text-[#181818] font-medium">Client</h5>

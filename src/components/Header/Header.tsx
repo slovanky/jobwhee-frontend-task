@@ -9,24 +9,24 @@ export default function Header() {
       <div className="wrapper">
         <div className="w-full h-11 sm:h-[54px] md:h-[62px] lg:h-[74px] bg-black rounded-full">
           <div className="w-full h-full ps-4 md:ps-6 pe-[5px] sm:pe-2 md:pe-[13px] flex items-center justify-between">
-            <Link href="/">
+            <Link href="/" aria-label="Home">
               <Image src="/img/logo.svg" width={171} height={27.33} className="w-[108px] md:w-[142px] lg:w-[171px] h-auto" alt="" />
             </Link>
 
             <div className="hidden md:block">
               <ul className="flex items-center gap-x-3.5 md:gap-x-[26px] lg:gap-x-8">
                 <li>
-                  <Link href="/" className="text-sm lg:text-base text-white font-semibold">
+                  <Link href="/" className="text-sm lg:text-base text-white font-semibold" aria-label="Post a Job">
                     Post a Job
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="text-sm lg:text-base text-white font-semibold">
+                  <Link href="/" className="text-sm lg:text-base text-white font-semibold" aria-label="Explore Jobs">
                     Explore Jobs
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="text-sm lg:text-base text-white font-semibold">
+                  <Link href="/" className="text-sm lg:text-base text-white font-semibold" aria-label="How It Works">
                     How It Works
                   </Link>
                 </li>
@@ -52,7 +52,10 @@ export default function Header() {
                 Sign Up
               </Link>
 
-              <button className="w-[34px] sm:w-[42px] aspect-square shrink-0 flex md:hidden items-center justify-center bg-white rounded-full cursor-pointer">
+              <button
+                className="w-[34px] sm:w-[42px] aspect-square shrink-0 flex md:hidden items-center justify-center bg-white rounded-full cursor-pointer"
+                aria-label="Navbar Menu"
+              >
                 <MenuSquaresIcon className="w-[18px] h-[18px] aspect-square" />
               </button>
             </div>

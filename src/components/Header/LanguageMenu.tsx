@@ -31,6 +31,7 @@ export default function LanguageMenu() {
       <button
         onClick={() => setLangMenuIsOpen(!langMenuIsOpen)}
         className="py-[7px] lg:py-[11px] px-[18px] flex items-center justify-center gap-x-1 bg-transparent text-sm text-white font-medium border border-[#949494]/50 rounded-full cursor-pointer"
+        aria-label="Language Menu"
       >
         <EnFlagIcon className="w-6 h-6 aspect-square -ms-2.5 bg-white/10 rounded-full" />
         <span className="ms-2">EN</span>
@@ -49,13 +50,13 @@ export default function LanguageMenu() {
             <div className="w-full mt-[9px] bg-black border border-[#949494]/50 rounded-[14px]">
               <ul className="px-2 divide-y divide-[#4A4A4A]">
                 <li>
-                  <button className="py-1.5 flex items-center gap-x-[9px] text-sm text-white font-medium cursor-pointer">
+                  <button className="py-1.5 flex items-center gap-x-[9px] text-sm text-white font-medium cursor-pointer" aria-label="Language Button">
                     <EnFlagIcon className="w-6 h-6 aspect-square bg-white/10 rounded-full" />
                     <span className="text-xs md:text-base">English</span>
                   </button>
                 </li>
                 <li>
-                  <button className="py-1.5 flex items-center gap-x-[9px] text-sm text-white font-medium cursor-pointer">
+                  <button className="py-1.5 flex items-center gap-x-[9px] text-sm text-white font-medium cursor-pointer" aria-label="Language Button">
                     <GreekFlagIcon className="w-6 h-6 aspect-square bg-white/10 rounded-full" />
                     <span className="text-xs sm:text-base">Greek</span>
                   </button>

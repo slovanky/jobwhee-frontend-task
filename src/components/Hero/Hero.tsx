@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="sm:absolute top-0 left-0 right-0 w-full h-auto sm:h-[320px] md:h-[495px] lg:h-[579px] flex flex-col items-center justify-between">
             <div className="w-full mt-[28px] sm:mt-0 pb-[22px] sm:p-[24px] md:p-[32px] lg:p-10 sm:pb-0 flex flex-col sm:flex-row sm:justify-between gap-y-[14px]">
               {/* left */}
-              <div className="z-[99] relative max-w-[299px] sm:w-[299px] sm:max-w-none md:w-[472px] lg:w-[567px] h-auto mx-auto">
+              <div className="z-[99] relative max-w-[299px] sm:w-[299px] sm:max-w-none md:w-[472px] lg:w-[567px] h-auto mx-auto sm:mx-0">
                 <div className="relative">
                   <HeroShapeLeft className="w-full h-auto" />
 
@@ -33,7 +33,7 @@ export default function Hero() {
               </div>
 
               {/* right */}
-              <div className="z-[99] relative max-w-[299px] sm:w-[299px] sm:max-w-none md:w-[472px] lg:w-[567px] mx-auto sm:mt-[82px] md:mt-[68px] lg:mt-[80px]">
+              <div className="z-[99] relative max-w-[299px] sm:w-[299px] sm:max-w-none md:w-[472px] lg:w-[567px] mx-auto sm:mx-0 sm:mt-[82px] md:mt-[68px] lg:mt-[80px]">
                 <div className="relative">
                   <HeroShapeRight className="w-full h-auto" />
 
@@ -44,10 +44,13 @@ export default function Hero() {
                   </div>
 
                   <div className="absolute -bottom-[20px] md:-bottom-[25px] right-[17px] md:right-[27px] lg:right-[45px] h-[40px] md:h-[50px] flex items-center justify-end gap-x-2.5">
-                    <button className="h-[40px] md:h-[50px] px-7 flex items-center justify-center bg-[#CBEC5E] text-xs md:text-base text-[#18470D] font-medium rounded-full cursor-pointer">
+                    <button
+                      className="h-[40px] md:h-[50px] px-7 flex items-center justify-center bg-[#CBEC5E] text-xs md:text-base text-[#18470D] font-medium rounded-full cursor-pointer"
+                      aria-label="Sign Up"
+                    >
                       Sign Up for Contract
                     </button>
-                    <button className="h-[40px] md:h-[50px] aspect-square shrink-0 flex items-center justify-center bg-white rounded-full cursor-pointer">
+                    <button className="h-[40px] md:h-[50px] aspect-square shrink-0 flex items-center justify-center bg-white rounded-full cursor-pointer" aria-label="Play">
                       <PlayIcon className="w-[14px] md:w-[18px] aspect-square" />
                     </button>
                   </div>

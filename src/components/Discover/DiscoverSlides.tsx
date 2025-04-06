@@ -56,16 +56,18 @@ export default function DiscoverSlides(props: DiscoverSlidesProps) {
 
       <div className="hidden sm:flex items-center justify-center gap-x-[24px]">
         <button
-          title="Prev Testimonial"
+          title="Prev"
           onClick={onPrevSlide}
           className="w-[63px] h-[63px] aspect-square flex items-center justify-center gap-2 bg-white text-black rounded-full cursor-pointer"
+          aria-label="Prev"
         >
           <Arrow2RightIcon className="h-5 w-5 md:h-6 md:w-6 aspect-square rotate-180" />
         </button>
         <button
-          title="Next Testimonial"
+          title="Next"
           onClick={onNextSlide}
           className="w-[63px] h-[63px] aspect-square flex items-center justify-center gap-2 bg-white text-black rounded-full cursor-pointer"
+          aria-label="Next"
         >
           <Arrow2RightIcon className="h-5 w-5 md:h-6 md:w-6 aspect-square" />
         </button>

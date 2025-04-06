@@ -18,7 +18,7 @@ export default function DiscoverCard(props: DiscoverCardProps) {
       </div>
       <div className="w-full h-[56px] p-1 ps-[18px] flex items-center gap-x-2 bg-white rounded-full">
         <h4 className="grow text-[14px] text-black font-bold">{slide.title}</h4>
-        <Link href="/" className="w-12 h-12 aspect-square flex items-center justify-center bg-[#CBEC5E] text-[#18470D] rounded-full">
+        <Link href="/" className="w-12 h-12 aspect-square flex items-center justify-center bg-[#CBEC5E] text-[#18470D] rounded-full" aria-label="Learn More About Service">
           <ArrowRightIcon className="w-[21px] h-[21px] aspect-square -rotate-45" />
         </Link>
       </div>
