@@ -2,7 +2,8 @@
 
 @theme {
   /* Breakpoints */
-  --breakpoint-sm: 375px;
+  /* --breakpoint-sm: 375px; */
+  --breakpoint-sm: 640px;
   --breakpoint-md: 860px;
   --breakpoint-lg: 1440px;
   --breakpoint-xl: 1920px;
@@ -20,7 +21,7 @@ body {
 }
 
 .wrapper {
-  @apply w-full max-w-[calc(335px+40px)] sm:max-w-[calc(780px+40px)] md:max-w-[calc(1200px+40px)] lg:max-w-[calc(1440px+40px)];
+  @apply w-full sm:max-w-[calc(780px+40px)] md:max-w-[calc(1200px+40px)] lg:max-w-[calc(1440px+40px)];
   @apply mx-auto px-5;
 }
 

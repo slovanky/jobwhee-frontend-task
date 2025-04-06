@@ -17,8 +17,9 @@ export default function Hero() {
           </div>
 
           <div className="sm:absolute top-0 left-0 right-0 w-full h-auto sm:h-[320px] md:h-[495px] lg:h-[579px] flex flex-col items-center justify-between">
-            <div className="w-full sm:p-[24px] md:p-[32px] lg:p-10 pb-0 flex flex-col sm:flex-row sm:justify-between gap-y-[14px]">
-              <div className="z-[99] relative sm:w-[299px] md:w-[472px] lg:w-[567px] h-auto">
+            <div className="w-full mt-[28px] sm:mt-0 pb-[22px] sm:p-[24px] md:p-[32px] lg:p-10 sm:pb-0 flex flex-col sm:flex-row sm:justify-between gap-y-[14px]">
+              {/* left */}
+              <div className="z-[99] relative max-w-[299px] sm:w-[299px] sm:max-w-none md:w-[472px] lg:w-[567px] h-auto mx-auto">
                 <div className="relative">
                   <HeroShapeLeft className="w-full h-auto" />
 
@@ -31,28 +32,30 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="z-[99] relative sm:w-[299px] md:w-[472px] lg:w-[567px] sm:mt-[82px] md:mt-[68px] lg:mt-[80px]">
+              {/* right */}
+              <div className="z-[99] relative max-w-[299px] sm:w-[299px] sm:max-w-none md:w-[472px] lg:w-[567px] mx-auto sm:mt-[82px] md:mt-[68px] lg:mt-[80px]">
                 <div className="relative">
                   <HeroShapeRight className="w-full h-auto" />
 
-                  <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                  <div className="absolute top-0 left-0 w-full h-full pb-5 md:pb-[25px] flex items-center justify-center">
                     <h4 className="text-xl md:text-3xl lg:text-[40px] text-white font-extrabold uppercase leading-relaxed">
                       We`ll <span className="text-[#D0FF00]">handle</span> that
                     </h4>
                   </div>
 
-                  <div className="absolute -bottom-[20px] md:-bottom-[25px] right-[45px] h-[40px] md:h-[50px] flex items-center justify-end gap-x-2.5">
-                    <button className="h-[40px] sm:h-[50px] px-7 flex items-center justify-center bg-[#CBEC5E] text-xs md:text-base text-[#18470D] font-medium rounded-full cursor-pointer">
+                  <div className="absolute -bottom-[20px] md:-bottom-[25px] right-[17px] md:right-[27px] lg:right-[45px] h-[40px] md:h-[50px] flex items-center justify-end gap-x-2.5">
+                    <button className="h-[40px] md:h-[50px] px-7 flex items-center justify-center bg-[#CBEC5E] text-xs md:text-base text-[#18470D] font-medium rounded-full cursor-pointer">
                       Sign Up for Contract
                     </button>
-                    <button className="h-[40px] sm:h-[50px] w-[50px] aspect-square shrink-0 flex items-center justify-center bg-white rounded-full cursor-pointer">
+                    <button className="h-[40px] md:h-[50px] aspect-square shrink-0 flex items-center justify-center bg-white rounded-full cursor-pointer">
                       <PlayIcon className="w-[14px] md:w-[18px] aspect-square" />
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="z-[99] w-full sm:w-[462px] lg:w-[555px] sm:max-w-[90%]">
+
+            <div className="z-[99] w-full sm:w-[462px] lg:w-[555px] sm:max-w-[90%] mt-[32px]">
               <SearchInput />
             </div>
           </div>

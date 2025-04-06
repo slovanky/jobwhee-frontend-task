@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <div className="w-full h-[17px]"></div>
       <Hero />
-      <div className="w-full h-[128px]"></div>
+      <div className="w-full h-[70px] sm:h-[128px]"></div>
       <Discover />
       <div className="w-full h-[120px]"></div>
     </div>

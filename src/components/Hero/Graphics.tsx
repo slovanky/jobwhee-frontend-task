@@ -17,7 +17,7 @@ export function HeroShapeLeft({ className }: { className: string }) {
   return (
     <svg width="568" height="191" viewBox="0 0 568 191" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
       <foreignObject x="-80.4" y="-80.4" width="728.3" height="351.8">
-        <div style={{ backdropFilter: "blur(40.2px)", clipPath: "url(#bgblur_0_2_457_clip_path)", height: "100%", width: "100%" }}></div>
+        <div className="bg-[#9CA9B9] sm:bg-transparent backdrop-blur-3xl" style={{ clipPath: "url(#bgblur_0_2_457_clip_path)", height: "100%", width: "100%" }}></div>
       </foreignObject>
       <defs>
         <clipPath id="bgblur_0_2_457_clip_path" transform="translate(80.4 80.4)">
@@ -32,7 +32,7 @@ export function HeroShapeRight({ className }: { className: string }) {
   return (
     <svg width="497" height="145" viewBox="0 0 497 145" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
       <foreignObject x="-79.9" y="-80.4" width="657.3" height="305.8">
-        <div style={{ backdropFilter: "blur(40.2px)", clipPath: "url(#bgblur_0_2_440_clip_path)", height: "100%", width: "100%" }}></div>
+        <div className="bg-[#9CA9B9] sm:bg-transparent backdrop-blur-3xl" style={{ clipPath: "url(#bgblur_0_2_440_clip_path)", height: "100%", width: "100%" }}></div>
       </foreignObject>
       <defs>
         <clipPath id="bgblur_0_2_440_clip_path" transform="translate(79.9 80.4)">
