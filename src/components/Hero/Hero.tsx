@@ -1,27 +1,24 @@
-import Image from "next/image";
 import SearchInput from "./SearchInput";
-import { HeroBottomCurve, HeroShapeLeft, HeroShapeRight } from "./Graphics";
+import HeroCarousel from "./HeroCarousel";
+import { HeroShapeLeft, HeroShapeRight } from "./Graphics";
 import { PlayIcon } from "../common/Icons";
 
 export default function Hero() {
   return (
-    <section>
+    <section className="z-[1]">
       <div className="wrapper">
         <div className="relative">
-          <div className="relative pb-2 sm:pb-0">
-            <div className="relative w-full h-[285px] sm:h-[387px] md:h-[596px] lg:h-[715px] bg-black/10 rounded-[18px] sm:rounded-[42px] lg:rounded-[50px] overflow-hidden">
-              <Image src="/img/hero-slide-1.jpg" width={1796} height={716} className="w-full h-full object-cover object-center" alt="" />
-              <HeroBottomCurve className="absolute -bottom-px left-1/2 translate -translate-x-1/2 w-[70%] h-auto text-[#F0F1F4]" />
-            </div>
+          <div className="relative pb-2 sm:pb-[12px] md:pb-0">
+            <HeroCarousel />
 
-            <div className="absolute bottom-0 md:bottom-2.5 lg:bottom-[32px] left-1/2 translate -translate-x-1/2 max-w-full min-w-[207px] py-[11px] sm:py-[13px] lg:py-[17px] sm:px-6 md:px-[45px] lg:px-[40px] flex items-center justify-center bg-white rounded-full shadow-xl">
+            <div className="z-[99] absolute bottom-0 md:bottom-2.5 lg:bottom-[32px] left-1/2 translate -translate-x-1/2 max-w-full min-w-[207px] py-[11px] sm:py-[13px] lg:py-[17px] sm:px-6 md:px-[45px] lg:px-[40px] flex items-center justify-center bg-white rounded-full shadow-xl">
               <span className="text-[12px] sm:text-sm md:text-lg lg:text-xl font-bold sm:font-extrabold uppercase whitespace-nowrap">Education and Tutoring</span>
             </div>
           </div>
 
           <div className="sm:absolute top-0 left-0 right-0 w-full h-auto sm:h-[320px] md:h-[495px] lg:h-[579px] flex flex-col items-center justify-between">
             <div className="w-full sm:p-[24px] md:p-[32px] lg:p-10 pb-0 flex flex-col sm:flex-row sm:justify-between gap-y-[14px]">
-              <div className="relative sm:w-[299px] md:w-[472px] lg:w-[567px] h-auto">
+              <div className="z-[99] relative sm:w-[299px] md:w-[472px] lg:w-[567px] h-auto">
                 <div className="relative">
                   <HeroShapeLeft className="w-full h-auto" />
 
@@ -34,7 +31,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="relative sm:w-[299px] md:w-[472px] lg:w-[567px] sm:mt-[82px] md:mt-[68px] lg:mt-[80px]">
+              <div className="z-[99] relative sm:w-[299px] md:w-[472px] lg:w-[567px] sm:mt-[82px] md:mt-[68px] lg:mt-[80px]">
                 <div className="relative">
                   <HeroShapeRight className="w-full h-auto" />
 
@@ -55,7 +52,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-[462px] lg:w-[555px] sm:max-w-[90%]">
+            <div className="z-[99] w-full sm:w-[462px] lg:w-[555px] sm:max-w-[90%]">
               <SearchInput />
             </div>
           </div>

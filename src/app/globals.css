@@ -23,3 +23,17 @@ body {
   @apply w-full max-w-[calc(335px+40px)] sm:max-w-[calc(780px+40px)] md:max-w-[calc(1200px+40px)] lg:max-w-[calc(1440px+40px)];
   @apply mx-auto px-5;
 }
+
+#hero-swiper {
+  .swiper-pagination {
+    @apply bottom-[42px] sm:bottom-[46px] md:bottom-[77px] lg:bottom-[110px] flex items-center justify-center
+  }
+
+  .swiper-pagination-bullet {
+    @apply w-2 md:w-2.5 h-2 md:h-2.5 aspect-square my-0 py-0 shrink-0 opacity-[42%] bg-[#CBEC5E]
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply opacity-100
+  }
+}
